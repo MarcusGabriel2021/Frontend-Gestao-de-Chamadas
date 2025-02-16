@@ -1,0 +1,10 @@
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.conteudo-principal {
+    width: 50vw;
+}
+.conteudo-principal h1 {
+    text-align: center;
+}

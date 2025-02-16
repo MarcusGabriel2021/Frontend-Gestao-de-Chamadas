@@ -1,0 +1,19 @@
+.turma {
+    display: flex;
+    justify-content: space-between;
+
+    border-width: 1px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+}
+
+.turma h3 {
+    margin-left: 10px;
+}
+
+.turma:hover {
+    border-color: #535bf2;
+    transition: border-color 0.25s;
+}
+
