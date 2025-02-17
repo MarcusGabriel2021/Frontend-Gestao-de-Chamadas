@@ -29,7 +29,7 @@ function TurmaForm({id}){
 
     useEffect(() => {
         if(id){
-            console.log("Consultar membro por id"):
+            console.log("Consultar membro por id");
             const MembroAPI = new MembroAPI();
             MembroAPI.getMembro(setMembro, id);
         }
@@ -68,50 +68,50 @@ function TurmaForm({id}){
                         </Form.Group>
                     )}
 
-                    <FormGroup as={Row} className="mb-3" controlId="nome">
-                    <FormLabel column sm="2">
+                        <FormGroup as={Row} className="mb-3" controlId="nome">
+                            <FormLabel column sm="2">
                                 Nome
                             </FormLabel>
                             <Col sm="10">
                                 <Form.Control type="text" placeholder="Nome" defaultValue={nome} onChange={(e) => setNome(e.target.value)} />
                             </Col>
-                        </Form.Group>
+                        </FormGroup>
 
                         <FormGroup as={Row} className="mb-3" controlId="sexo">
-                    <FormLabel column sm="2">
+                            <FormLabel column sm="2">
                                 Sexo
                             </FormLabel>
                             <Col sm="10">
                                 <Form.Control type="text" placeholder="Sexo" defaultValue={nome} onChange={(e) => setSexo(e.target.value)} />
                             </Col>
-                        </Form.Group>
+                        </FormGroup>
 
                         <FormGroup as={Row} className="mb-3" controlId="data">
-                    <FormLabel column sm="2">
+                            <FormLabel column sm="2">
                                 Data
                             </FormLabel>
                             <Col sm="10">
                                 <Form.Control type="text" placeholder="Data" defaultValue={nome} onChange={(e) => setData(e.target.value)} />
                             </Col>
-                        </Form.Group>
+                    </FormGroup>
 
-                        <FormGroup as={Row} className="mb-3" controlId="telefone"></FormGroup>
-                    <FormLabel column sm="2">
+                    <FormGroup as={Row} className="mb-3" controlId="telefone">
+                        <FormLabel column sm="2">
                                 Telefone
-                            </FormLabel>
+                        </FormLabel>
                             <Col sm="10">
                                 <Form.Control type="text" placeholder="Telefone" defaultValue={nome} onChange={(e) => setNosetTelefoneme(e.target.value)} />
                             </Col>
-                        </Form.Group>
+                    </FormGroup>
 
-                        <FormGroup as={Row} className="mb-3" controlId="tipo"></FormGroup>
-                    <FormLabel column sm="2">
+                    <FormGroup as={Row} className="mb-3" controlId="tipo">
+                        <FormLabel column sm="2">
                                 Tipo
-                            </FormLabel>
+                        </FormLabel>
                             <Col sm="10">
                                 <Form.Control type="text" placeholder="Tipo" defaultValue={nome} onChange={(e) => setTipo(e.target.value)} />
                             </Col>
-                        </Form.Group>                 
+                    </FormGroup>                 
 
                         
                     <br/>
